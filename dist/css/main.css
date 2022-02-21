@@ -45,8 +45,8 @@ html, body {
   right: -15rem;
   -webkit-animation: appear-right 0.9s normal forwards ease-in-out;
           animation: appear-right 0.9s normal forwards ease-in-out;
-  -webkit-animation-delay: 1s;
-          animation-delay: 1s;
+  -webkit-animation-delay: .3s;
+          animation-delay: .3s;
 }
 
 .first-work, .second-work, .skills, .about {
@@ -55,8 +55,8 @@ html, body {
   left: -15rem;
   -webkit-animation: appear-left 0.9s normal forwards ease-in-out;
           animation: appear-left 0.9s normal forwards ease-in-out;
-  -webkit-animation-delay: 2s;
-          animation-delay: 2s;
+  -webkit-animation-delay: .5s;
+          animation-delay: .5s;
 }
 
 @-webkit-keyframes appear-top {
