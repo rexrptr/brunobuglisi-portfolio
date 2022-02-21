@@ -1,0 +1,43 @@
+.logo {
+  opacity: 1; // 0 for animation - 1 for testing
+  position: relative;
+  top: 0; // -15rem for animation - 0 for testing
+  // animation: appear-top 0.9s normal forwards ease-in-out;
+}
+
+.first-nav {
+  opacity: 1; // 0 for animation - 1 for testing
+  position: relative;
+  right: 0; // -15rem for animation - 0 for testing
+  // animation: appear-right 0.9s normal forwards ease-in-out;
+  // animation-delay: 1s;
+}
+
+@keyframes appear-top {
+  75% {
+    opacity: 0.3;
+  }
+  100% {
+    opacity: 1;
+    top: 0;
+  }
+}
+@keyframes appear-right {
+  100% {
+    opacity: 1;
+    right: 0;
+  }
+}
+
+.logo-img {
+  animation: bounce ease .8s infinite;
+}
+
+@keyframes bounce {
+  50% {
+    transform: scale(1.09);
+  }
+  100% {
+    transform: scale(1);
+  }
+}

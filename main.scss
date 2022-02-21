@@ -1,0 +1,261 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700;900&family=Roboto:wght@500;700&display=swap");
+@import "./dist/scss/_myvariables";
+@import "./dist/scss/_resets";
+@import "./dist/scss/_trackbar";
+@import "./dist/scss/_animations";
+@import "./dist/scss/fontawesome";
+@import "./dist/scss/solid";
+@import "./dist/scss/brands";
+@import "./dist/scss/footer";
+
+@mixin flex-center-all {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body {
+  font-family: $ff-prim;
+  min-height: 100vh;
+  font-size: 15px;
+  background: $color-bg;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 4rem 0;
+  .-container {
+    .-name {
+      color: $color-title-name;
+      font-size: 1.2rem;
+      line-height: 60px;
+      letter-spacing: 0.4em;
+    }
+    .-title {
+      color: $color-title-text;
+      font-size: 1.4rem;
+      letter-spacing: 0.4em;
+    }
+  }
+  .logo-img {
+    font-size: 7rem;
+    margin-left: 1rem;
+    color: $color-card-text;
+  }
+}
+
+.first-nav,
+.second-nav,
+.third-nav {
+  @include flex-center-all();
+  margin: 7rem 0 4rem 0;
+  .-container {
+    background-color: $color-nav-component-bg;
+    text-align: center;
+    width: 50vw;
+    padding: 1rem;
+    border-radius: 30px;
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.25);
+    .-nav1 {
+      color: $color-title-text;
+      letter-spacing: 0.265em;
+      font-size: $font-p;
+    }
+  }
+}
+
+@mixin card-title {
+  font-weight: 700;
+  color: $color-title-name;
+  letter-spacing: 0.3em;
+}
+
+@mixin card-sub {
+  color: $color-card-text;
+  letter-spacing: 0.23rem;
+  margin: 0.5rem 0 1rem 0;
+}
+
+.first-work,
+.second-work {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  font-family: $ff-sec;
+  margin-top: 2rem;
+  .arrow {
+    margin-top: 7rem;
+  }
+  .-container {
+    background: $color-card-bg-rgba;
+    padding: 2rem 5rem;
+    width: 500px;
+    border-radius: 30px;
+    text-align: center;
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.25);
+    .-title-container {
+      .title {
+        @include card-title();
+      }
+      .sub {
+        @include card-sub();
+      }
+    }
+    .-skills-container {
+      .title {
+        @include card-title();
+      }
+      .sub {
+        @include card-sub();
+        line-height: 1.5;
+      }
+    }
+    .-links-container {
+      @include flex-center-all();
+      flex-direction: column;
+      font-family: $ff-prim;
+      margin-top: 1rem;
+      .link-item {
+        @include flex-center-all();
+        width: 80%;
+        margin: 0.5rem 0;
+        padding: 0.5rem 0;
+        background-color: $color-card-bg;
+        border-radius: 30px;
+        transition: all ease 300ms;
+        &:hover * {
+          color: $color-links-hover;
+        }
+        a {
+          @include flex-center-all();
+          color: $color-links;
+          text-decoration: none;
+          font-size: $font-p;
+          letter-spacing: 0.06em;
+          i {
+            font-size: 1.5rem;
+            margin-right: 0.8rem;
+            color: $color-links;
+          }
+        }
+      }
+    }
+  }
+}
+
+.about {
+  @include flex-center-all();
+  font-family: $ff-prim;
+  margin: auto;
+  max-width: 600px;
+  border-radius: 30px;
+  text-align: center;
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.25);
+  background: $color-card-bg-rgba;
+  padding: 1.2rem 3rem;
+  .-container {
+    .-about-cont {
+      @include flex-center-all();
+      p {
+        color: $color-card-text;
+        letter-spacing: 0.15em;
+        font-weight: 400;
+        line-height: 2;
+        span {
+          color: #fff;
+          font-weight: 700;
+        }
+      }
+    }
+    .-contact-cont {
+      display: flex;
+      flex-direction: column;
+      .-contact-row {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 1rem;
+      }
+      a{
+        color: $color-links;
+        text-decoration: none;
+        font-size: 1rem;
+        letter-spacing: 0.06em;
+        padding: .5rem;
+        border-radius: 30px;
+        width: 200px;
+        background-color: $color-card-bg-rgba;
+        margin-right: 1rem;
+        transition: all ease 300ms;
+        &:hover {
+          color: $color-links-hover;
+        }
+        i{
+          margin-right: .5rem;
+        }
+      }
+    }
+  }
+}
+
+.skills {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: flex-start;
+ 
+  .front-end,
+  .back-end,
+  .software {
+    font-family: $ff-prim;
+    border-radius: 30px;
+    max-width: 600px;
+    text-align: left;
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.25);
+    background: $color-card-bg-rgba;
+    padding: 1.2rem 3rem;
+
+    .-container {
+      font-weight: 700;
+      color: #fff;
+      letter-spacing: 0.2em;
+      ul {
+        list-style: none;
+        letter-spacing: 0.15em;
+        color: $color-card-text;
+        font-weight: 400;
+      }
+      i {
+        margin-left: .5rem;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 860px) {
+  .logo {
+    .logo-img {
+      font-size: 5rem;
+      margin-left: 0;
+    }
+  }
+
+  .first-work, .second-work {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .arrow, .img {
+      display: none
+    }
+  }
+  .skills {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .back-end {
+      margin: 2rem 0;
+    }
+  }
+}
