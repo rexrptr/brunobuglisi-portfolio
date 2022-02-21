@@ -1,16 +1,28 @@
-.logo {
-  opacity: 1; // 0 for animation - 1 for testing
-  position: relative;
-  top: 0; // -15rem for animation - 0 for testing
-  // animation: appear-top 0.9s normal forwards ease-in-out;
+html, body {
+  overflow-x: hidden;
 }
 
-.first-nav {
-  opacity: 1; // 0 for animation - 1 for testing
+.logo {
+  opacity: 0; // 0 for animation - 1 for testing
   position: relative;
-  right: 0; // -15rem for animation - 0 for testing
-  // animation: appear-right 0.9s normal forwards ease-in-out;
-  // animation-delay: 1s;
+  top: -15rem; // -15rem for animation - 0 for testing
+  animation: appear-top 0.9s normal forwards ease-in-out;
+}
+
+.first-nav, .second-nav, .third-nav {
+  opacity: 0; // 0 for animation - 1 for testing
+  position: relative;
+  right: -15rem; // -15rem for animation - 0 for testing
+  animation: appear-right 0.9s normal forwards ease-in-out;
+  animation-delay: 1s;
+}
+
+.first-work, .second-work, .skills, .about {
+  opacity: 0; // 0 for animation - 1 for testing
+  position: relative;
+  left: -15rem; // -15rem for animation - 0 for testing
+  animation: appear-left 0.9s normal forwards ease-in-out;
+  animation-delay: 2s;
 }
 
 @keyframes appear-top {
@@ -26,6 +38,12 @@
   100% {
     opacity: 1;
     right: 0;
+  }
+}
+@keyframes appear-left {
+  100% {
+    opacity: 1;
+    left: 0;
   }
 }
 
