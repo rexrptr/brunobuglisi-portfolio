@@ -49,7 +49,7 @@ html, body {
           animation-delay: .3s;
 }
 
-.first-work, .second-work, .skills, .about {
+.first-work, .second-work, .third-work, .skills, .about {
   opacity: 0;
   position: relative;
   left: -15rem;
@@ -9457,7 +9457,7 @@ body {
 }
 
 .first-work,
-.second-work {
+.second-work, .third-work {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -9472,12 +9472,12 @@ body {
 }
 
 .first-work .arrow,
-.second-work .arrow {
+.second-work .arrow, .third-work .arrow {
   margin-top: 7rem;
 }
 
 .first-work .-container,
-.second-work .-container {
+.second-work .-container, .third-work .-container {
   background: rgba(70, 74, 82, 0.5);
   padding: 2rem 5rem;
   width: 500px;
@@ -9488,28 +9488,28 @@ body {
 }
 
 .first-work .-container .-title-container .title,
-.second-work .-container .-title-container .title {
+.second-work .-container .-title-container .title, .third-work .-container .-title-container .title {
   font-weight: 700;
   color: #ffffff;
   letter-spacing: 0.3em;
 }
 
 .first-work .-container .-title-container .sub,
-.second-work .-container .-title-container .sub {
+.second-work .-container .-title-container .sub, .third-work .-container .-title-container .sub {
   color: #A0A1A9;
   letter-spacing: 0.23rem;
   margin: 0.5rem 0 1rem 0;
 }
 
 .first-work .-container .-skills-container .title,
-.second-work .-container .-skills-container .title {
+.second-work .-container .-skills-container .title, .third-work .-container .-skills-container .title {
   font-weight: 700;
   color: #ffffff;
   letter-spacing: 0.3em;
 }
 
 .first-work .-container .-skills-container .sub,
-.second-work .-container .-skills-container .sub {
+.second-work .-container .-skills-container .sub, .third-work .-container .-skills-container .sub {
   color: #A0A1A9;
   letter-spacing: 0.23rem;
   margin: 0.5rem 0 1rem 0;
@@ -9517,7 +9517,7 @@ body {
 }
 
 .first-work .-container .-links-container,
-.second-work .-container .-links-container {
+.second-work .-container .-links-container, .third-work .-container .-links-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -9536,7 +9536,7 @@ body {
 }
 
 .first-work .-container .-links-container .link-item,
-.second-work .-container .-links-container .link-item {
+.second-work .-container .-links-container .link-item, .third-work .-container .-links-container .link-item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -9556,12 +9556,12 @@ body {
 }
 
 .first-work .-container .-links-container .link-item:hover *,
-.second-work .-container .-links-container .link-item:hover * {
+.second-work .-container .-links-container .link-item:hover *, .third-work .-container .-links-container .link-item:hover * {
   color: #6087ce;
 }
 
 .first-work .-container .-links-container .link-item a,
-.second-work .-container .-links-container .link-item a {
+.second-work .-container .-links-container .link-item a, .third-work .-container .-links-container .link-item a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -9578,7 +9578,7 @@ body {
 }
 
 .first-work .-container .-links-container .link-item a i,
-.second-work .-container .-links-container .link-item a i {
+.second-work .-container .-links-container .link-item a i, .third-work .-container .-links-container .link-item a i {
   font-size: 1.5rem;
   margin-right: 0.8rem;
   color: #91B3F2;
@@ -9731,7 +9731,7 @@ body {
     font-size: 5rem;
     margin-left: 0;
   }
-  .first-work, .second-work {
+  .first-work, .second-work, .third-work {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -9742,7 +9742,7 @@ body {
         -ms-flex-align: center;
             align-items: center;
   }
-  .first-work .arrow, .first-work .img, .second-work .arrow, .second-work .img {
+  .first-work .arrow, .first-work .img, .second-work .arrow, .second-work .img, .third-work .arrow, .third-work .img {
     display: none;
   }
   .skills {

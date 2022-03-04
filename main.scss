@@ -79,7 +79,7 @@ body {
 }
 
 .first-work,
-.second-work {
+.second-work, .third-work {
   display: flex;
   align-items: flex-start;
   justify-content: space-evenly;
@@ -242,7 +242,7 @@ body {
     }
   }
 
-  .first-work, .second-work {
+  .first-work, .second-work, .third-work {
     display: flex;
     justify-content: center;
     align-items: center;
